@@ -1,0 +1,16 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Permisos para las ventanas main y popover de Enfoque.",
+  "windows": ["main", "popover"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-show",
+    "core:window:allow-hide",
+    "core:window:allow-set-focus",
+    "sql:default",
+    "sql:allow-execute",
+    "autostart:default",
+    "process:allow-exit"
+  ]
+}

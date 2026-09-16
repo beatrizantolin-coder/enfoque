@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Paleta de proyectos y clientes (9 círculos seleccionables) */
+  --tag-rojo: #e2725b;
+  --tag-naranja: #e8a33d;
+  --tag-verde: #7fb35c;
+  --tag-azul: #5b8dbf;
+  --tag-morado: #9080c4;
+  --tag-gris: #9a9d93;
+  --tag-rosa: #d97fa6;
+  --tag-cian: #4fafa8;
+  --tag-amarillo: #d9b23d;
+
+  /* Colores base de interfaz */
+  --accent: #7fb35c;
+  --accent-text: #5c8a3c;
+  --accent-bg: #f1f6ec;
+  --text-primary: #20231f;
+  --text-secondary: #9a9d93;
+  --text-tertiary: #5a5d55;
+  --border: #e5e5e0;
+  --border-soft: #ebebe6;
+  --row-hover: #fafaf8;
+  --sidebar-bg: #fbfbf9;
+  --sidebar-active: #edeee8;
+  --error: #e2725b;
+  --bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.qs {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.nav-item {
+  transition: background 0.12s ease;
+  cursor: pointer;
+}
+.nav-item:hover {
+  background: #f0f0ec;
+}
+.row {
+  transition: background 0.12s ease;
+  position: relative;
+}
+.row:hover {
+  background: var(--row-hover) !important;
+}
+.row-actions {
+  opacity: 0;
+  transition: opacity 0.12s ease;
+  display: flex;
+  gap: 2px;
+}
+.row:hover .row-actions {
+  opacity: 1;
+}
+.row-actions.always {
+  opacity: 1;
+}
+.btn {
+  transition:
+    transform 0.08s ease,
+    background 0.12s ease;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.pill-btn {
+  transition:
+    background 0.12s ease,
+    color 0.12s ease;
+  cursor: pointer;
+}
+.swatch {
+  transition: transform 0.1s ease;
+  cursor: pointer;
+}
+.swatch:hover {
+  transform: scale(1.15);
+}
+.switch {
+  cursor: pointer;
+}
+.icon-btn {
+  transition: background 0.12s ease;
+  cursor: pointer;
+}
+.icon-btn:hover {
+  background: #f0f0ec;
+}
+.header-icon {
+  transition: background 0.12s ease;
+  cursor: pointer;
+}
+.header-icon:hover {
+  background: #f0f0ec;
+}
+
+@keyframes slideInPanel {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
