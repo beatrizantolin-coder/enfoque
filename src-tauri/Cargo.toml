@@ -23,3 +23,4 @@ objc2 = "0.6.4"
 objc2-app-kit = { version = "0.3.2", features = ["NSRunningApplication", "NSWorkspace"] }
 objc2-foundation = { version = "0.3.2", features = ["NSString"] }
 sqlx = { version = "0.8", default-features = false, features = ["sqlite", "runtime-tokio"] }
+tokio = { version = "1.53.1", features = ["time"] }
